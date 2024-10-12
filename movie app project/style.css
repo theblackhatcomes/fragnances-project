@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500&display=swap');
+
+:root {
+  --primary-color: #f5f5f7;
+  --secondary-color: #333;
+  --accent-color: #e7a864;
+  --text-color: #333;
+  --background-color: #fafafa;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+header {
+  background-color: var(--primary-color);
+  padding: 2rem;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.header-container h1 {
+  font-weight: 500;
+  color: var(--secondary-color);
+}
+
+.search-container {
+  margin-top: 1rem;
+}
+
+.search-bar {
+  padding: 0.7rem 1rem;
+  border-radius: 50px;
+  border: 2px solid var(--accent-color);
+  font-size: 1rem;
+  width: 70%;
+}
+
+.search-btn {
+  padding: 0.7rem 2rem;
+  background-color: var(--accent-color);
+  border: none;
+  color: white;
+  border-radius: 50px;
+  cursor: pointer;
+  margin-left: 1rem;
+}
+
+.fragrance-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 2rem 0;
+  padding: 0 2rem;
+}
+
+.fragrance {
+  width: 250px;
+  margin: 1.5rem;
+  background-color: var(--primary-color);
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.fragrance img {
+  width: 100%;
+  border-bottom: 3px solid var(--accent-color);
+}
+
+.fragrance .info {
+  padding: 1rem;
+  text-align: center;
+}
+
+.fragrance .info h3 {
+  color: var(--secondary-color);
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+}
+
+.fragrance .info .description {
+  color: #777;
+  font-size: 0.9rem;
+  padding: 1rem;
+  transition: all 0.3s;
+  opacity: 0;
+}
+
+.fragrance:hover .description {
+  opacity: 1;
+  background-color: var(--accent-color);
+  color: white;
+  border-radius: 10px;
+}
+
+.fragrance:hover {
+  transform: scale(1.05);
+}
+.add-to-cart {
+  position: absolute;
+  bottom: -30px; 
+  left: 50%;
+  transform: translateX(-50%);
+  transition: bottom 0.3s ease;
+}
+
+.fragrance:hover .add-to-cart {
+  bottom: 0; 
+}
+
+footer {
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+  padding: 2rem;
+  text-align: center;
+}
+
+footer a {
+  color: var(--accent-color);
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+ 
