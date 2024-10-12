@@ -4,11 +4,10 @@ Welcome to the Fragrance App! This web application is designed to help users exp
 
 ## Table of Contents
 
-- [Demo](#demo)
+
 - [Features](#features)
 - [Technologies Used](#technologies-used)
 - [Getting Started](#getting-started)
-- [API Integration](#api-integration)
 - [Future Development](#future-development)
 - [Contributing](#contributing)
 - [License](#license)
